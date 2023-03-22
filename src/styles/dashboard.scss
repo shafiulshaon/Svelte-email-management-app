@@ -1,0 +1,14 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  max-width: 300px;
+}
+.dashboard-item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}

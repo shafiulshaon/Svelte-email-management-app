@@ -1,5 +1,10 @@
 <script lang="ts">
   import LoginPage from 'components/LoginPage.svelte'
+  import DashBoard from 'components/DashBoard.svelte'
+  import SampleData from './sample-data'
+
+  export let appName: string
+  const emails = SampleData
   let isLoggedIn = false
   let userEmail = ''
 
@@ -27,6 +32,7 @@
 <main>
 
   {#if isLoggedIn}
+    <DashBoard {emails} />
   {:else}
     <LoginPage on:login={handleLogin} />
   {/if}
